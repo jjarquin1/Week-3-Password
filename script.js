@@ -54,7 +54,7 @@ function generatePassword() {
     }
    
    for(i=passWrd.length; i < pswdLength; i++) {
-       passWrd += Type;
+       passWrd += Type.charAt(Math.floor(Math.random()*passWrd.length));
    }
   
   }
